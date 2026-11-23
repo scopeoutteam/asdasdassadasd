@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pocket Cosmos</title>
+  <meta name="description" content="A tiny universe you can build with your cursor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="sky" aria-hidden="true"></canvas>
+
+  <main class="panel">
+    <p class="eyebrow">Pocket Cosmos</p>
+    <h1>Click anywhere to make a planet.</h1>
+    <p class="lede">Every planet gets a name, a colour and an orbit. Build a whole system, then let it spin.</p>
+
+    <div class="stats">
+      <div><span id="count">0</span><small>planets</small></div>
+      <div><span id="latest">none yet</span><small>newest</small></div>
+    </div>
+
+    <div class="actions">
+      <button id="fact-btn" type="button">Space fact</button>
+      <button id="clear-btn" type="button" class="ghost">Clear sky</button>
+    </div>
+
+    <p id="fact" class="fact" aria-live="polite"></p>
+  </main>
+
+  <footer>Made at random. Press <kbd>Space</kbd> for a random planet.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
